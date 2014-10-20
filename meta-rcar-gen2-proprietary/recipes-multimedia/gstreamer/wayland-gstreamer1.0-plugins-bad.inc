@@ -8,7 +8,7 @@ PACKAGECONFIG_remove = "orc"
 
 EXTRA_OECONF += " --enable-wayland"
 
-SRC_URI += '${@base_conditional("WAYLAND_GFX_ENABLE", "1", " \
+SRC_URI += '${@base_conditional("xWAYLAND_GFX_ENABLE", "1", " \
             file://0001-waylandsink-Add-the-implementation-to-use-wayland-km.patch \
             file://0002-waylandsink-Move-the-display-structure-allocation-fr.patch \
             file://0003-waylandsink-Change-wayland-display-property-from-dis.patch \
